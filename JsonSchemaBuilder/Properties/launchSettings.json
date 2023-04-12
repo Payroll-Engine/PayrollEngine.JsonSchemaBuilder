@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PayrollEngine.JsonSchemaBuilder": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Shared\\PayrollEngine\\Repos\\PayrollEngine.Client.Core\\Client.Core\\bin\\Release\\net7.0\\PayrollEngine.Client.Core.dll PayrollEngine.Client.Model.Exchange PayrollEngine.Exchange.schema.json"
+    }
+  }
+}

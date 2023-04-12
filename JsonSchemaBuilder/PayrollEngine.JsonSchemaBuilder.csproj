@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<AssemblyName>PayrollEngine.JsonSchemaBuilder</AssemblyName>
+		<RootNamespace>PayrollEngine.JsonSchemaBuilder</RootNamespace>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<Authors>Jani Giannoudis</Authors>
+		<Company>Software Consulting Giannoudis</Company>
+		<Product>Payroll Engine</Product>
+		<Description>Payroll Engine JSON Schema Builder Application</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NJsonSchema" Version="10.8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<BuildFiles Include="$(TargetDir)\*.*" />
+	</ItemGroup>
+
+</Project>
