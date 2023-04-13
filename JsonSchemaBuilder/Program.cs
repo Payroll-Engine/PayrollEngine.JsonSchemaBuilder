@@ -2,7 +2,10 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using NJsonSchema;
+using NJsonSchema.Generation;
 
 namespace PayrollEngine.JsonSchemaBuilder;
 
@@ -79,8 +82,17 @@ static class Program
         JsonSchema schema;
         try
         {
-            schema = JsonSchema.FromType(schemaType);
-            //schema = generator.Generate(schemaType);
+            var settings = new JsonSchemaGeneratorSettings
+            {
+                SerializerSettings = new()
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    DefaultValueHandling = DefaultValueHandling.Ignore
+                },
+                AlwaysAllowAdditionalObjectProperties = true
+            };
+            var generator = new JsonSchemaGenerator(settings);
+            schema = generator.Generate(schemaType);
         }
         catch (Exception exception)
         {
