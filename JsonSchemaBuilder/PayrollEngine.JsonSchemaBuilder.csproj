@@ -7,6 +7,7 @@
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 		<Authors>Jani Giannoudis</Authors>
 		<Company>Software Consulting Giannoudis</Company>
+		<Copyright>2023 Software Consulting Giannoudis</Copyright>
 		<Product>Payroll Engine</Product>
 		<Description>Payroll Engine JSON Schema Builder Application</Description>
 	</PropertyGroup>

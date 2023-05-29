@@ -1,2 +1,3 @@
-# Core
-[Payroll Engine](https://github.com/Payroll-Engine) json schema builder application.
+<h1>Payroll Engine Json Schema Builder</h1>
+
+Payroll Engine tool to generate JSON schemas, based on [NJsonSchema](https://github.com/RicoSuter/NJsonSchema).
