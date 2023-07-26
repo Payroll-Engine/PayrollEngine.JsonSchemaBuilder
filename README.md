@@ -1,3 +1,4 @@
 <h1>Payroll Engine Json Schema Builder</h1>
 
-Payroll Engine tool to generate JSON schemas, based on [NJsonSchema](https://github.com/RicoSuter/NJsonSchema).
+## Third party components
+- JSON schema generation with [NJsonSchema](https://github.com/RicoSuter/NJsonSchema/) - licence `MIT`
