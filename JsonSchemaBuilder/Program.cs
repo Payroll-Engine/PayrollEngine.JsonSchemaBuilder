@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using NJsonSchema;
 using NJsonSchema.Generation;
+using NJsonSchema.NewtonsoftJson.Generation;
 
 namespace PayrollEngine.JsonSchemaBuilder;
 
@@ -82,7 +83,7 @@ static class Program
         JsonSchema schema;
         try
         {
-            var settings = new JsonSchemaGeneratorSettings
+            var settings = new NewtonsoftJsonSchemaGeneratorSettings
             {
                 SerializerSettings = new()
                 {
@@ -161,7 +162,7 @@ static class Program
         return true;
     }
 
-    /// <summary>Resolves depending assemblies, using the source assembly path</summary>
+    /// <summary>Resolves dependent assemblies, using the source assembly path</summary>
     /// <param name="sender">The sender</param>
     /// <param name="args">The <see cref="ResolveEventArgs"/> instance containing the event data.</param>
     /// <returns>The assembly</returns>
