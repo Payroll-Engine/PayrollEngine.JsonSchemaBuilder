@@ -1,16 +1,17 @@
 <Project>
 
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<Version>1.0.5</Version>
-		<FileVersion>1.0.5</FileVersion>
-		<InformationalVersion>1.0.5</InformationalVersion>
+		<TargetFramework>net9.0</TargetFramework>
+		<Version>1.0.6</Version>
+		<FileVersion>1.0.6</FileVersion>
+		<InformationalVersion>1.0.6</InformationalVersion>
 		<Authors>Jani Giannoudis</Authors>
 		<Company>Software Consulting Giannoudis</Company>
-		<Copyright>2023 Software Consulting Giannoudis</Copyright>
+		<Copyright>2025 Software Consulting Giannoudis</Copyright>
 		<Product>Payroll Engine Json Schema Builder</Product>
 		<PackageProjectUrl>https://payrollengine.org/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Payroll-Engine/PayrollEngine.JsonSchemaBuilder.git</RepositoryUrl>
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
