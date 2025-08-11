@@ -14,8 +14,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="NJsonSchema" Version="11.1.0" />
-		<PackageReference Include="NJsonSchema.NewtonsoftJson" Version="11.1.0" />
+		<PackageReference Include="NJsonSchema" Version="11.4.0" />
+		<PackageReference Include="NJsonSchema.NewtonsoftJson" Version="11.4.0" />
 	</ItemGroup>
 
 	<ItemGroup>

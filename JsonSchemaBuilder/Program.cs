@@ -214,7 +214,7 @@ static class Program
         Console.WriteLine("3   Schema generation error");
         Console.WriteLine();
         Console.Write("Press any key...");
-        Console.ReadKey();
+        Console.Read();
     }
 
     #endregion
